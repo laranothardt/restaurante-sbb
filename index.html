@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBB - Smash Burger Bar | Premium Smash Burgers and Beer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="crt-overlay">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo-container">
+        <span class="logo-sbb">SBB</span>
+        <span class="logo-sub">SMASH BURGER BAR</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <a href="#menu" data-i18n="nav_menu" class="nav-link">MENÚ</a>
+        <a href="#delivery" data-i18n="nav_delivery" class="nav-link">PEDIDOS</a>
+        <a href="#about" data-i18n="nav_about" class="nav-link">SOBRE NOSOTROS</a>
+        <a href="#contact" data-i18n="nav_contact" class="nav-link">UBICACIÓN</a>
+      </nav>
+
+      <!-- Language Selector -->
+      <div class="header-actions">
+        <div class="lang-selector-wrapper">
+          <button class="lang-btn" id="langBtn">
+            <i class="fa-solid fa-globe"></i>
+            <span id="currentLang">ES</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option" data-lang="es">ES <span>Español</span></button>
+            <button class="lang-option" data-lang="ca">CA <span>Català</span></button>
+            <button class="lang-option" data-lang="en">EN <span>English</span></button>
+            <button class="lang-option" data-lang="de">DE <span>Deutsch</span></button>
+            <button class="lang-option" data-lang="fr">FR <span>Français</span></button>
+          </div>
+        </div>
+
+        <a href="#menu" class="cta-coin" data-i18n="insert_coin_cta">INSERTE MONEDA</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span class="dpad-vertical"></span>
+          <span class="dpad-horizontal"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#menu" data-i18n="nav_menu" class="mobile-link">MENÚ</a>
+      <a href="#delivery" data-i18n="nav_delivery" class="mobile-link">PEDIDOS</a>
+      <a href="#about" data-i18n="nav_about" class="mobile-link">SOBRE NOSOTROS</a>
+      <a href="#contact" data-i18n="nav_contact" class="mobile-link">UBICACIÓN</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-scanlines"></div>
+    <div class="hero-content">
+
+      <!-- Pacman Animation Banner -->
+      <div class="top-pacman-banner">
+        <img src="images/Pacman animation.gif" alt="Pacman Animation Banner">
+      </div>
+
+      <div class="hero-logo-wrapper">
+        <img src="images/Logo.png" alt="Smash Burger Bar Logo" class="hero-logo">
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-primary" data-i18n="btn_menu">
+          <i class="fa-solid fa-gamepad"></i> VER MENÚ
+        </a>
+        <a href="#delivery" class="btn btn-secondary" data-i18n="btn_delivery">
+          <i class="fa-solid fa-truck-fast"></i> PEDIR ONLINE
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-arrow"></span>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="menu_title">CHOOSE YOUR CHARACTER</h2>
+        <p class="section-subtitle" data-i18n="menu_subtitle">Nuestras emblemáticas smash burgers con queso fundido y
+          costra dorada.</p>
+      </div>
+
+      <!-- Combo Info Banner -->
+      <div class="info-banner">
+        <div class="info-icon"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="info-content">
+          <h4 data-i18n="combo_banner_title">¡SUBE DE NIVEL A COMBO!</h4>
+          <p data-i18n="combo_banner_desc">Haz tu Burger o Milanesa un Combo con Patatas y Bebida por una puntuación
+            mejorada.</p>
+        </div>
+      </div>
+
+      <!-- Menu Tabs Header -->
+      <div class="menu-tabs">
+        <button class="menu-tab-btn active" data-tab="burgers">
+          <i class="fa-solid fa-burger"></i> HAMBURGUESAS
+        </button>
+        <button class="menu-tab-btn" data-tab="milanesas-entrantes">
+          <i class="fa-solid fa-drumstick-bite"></i> ENTRANTES Y MILANESAS
+        </button>
+        <button class="menu-tab-btn" data-tab="extras">
+          <i class="fa-solid fa-circle-plus"></i> EXTRAS
+        </button>
+        <button class="menu-tab-btn" data-tab="bebidas-postres">
+          <i class="fa-solid fa-mug-hot"></i> BEBIDAS Y POSTRES
+        </button>
+      </div>
+
+      <!-- Burgers -->
+      <div class="menu-tab-pane active" id="tab-burgers">
+        <div class="menu-grid">
+          <!-- Cheese Burger -->
+          <div class="menu-card" data-id="1">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="original_recipe">RECETA ORIGINAL</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/CheeseBurger.png" alt="Cheese Burger" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">1. CHEESE BURGER</h3>
+              <p class="burger-ingredients" data-i18n="desc_classic">Pan brioche, una carne smash y doble cheddar.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">7.90€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+
+          <!-- Pacman -->
+          <div class="menu-card theme-blue" data-id="2">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="highly_recommended">RECOMENDADO</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/Pacman.png" alt="Pacman Burger" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">2. PACMAN</h3>
+              <p class="burger-ingredients" data-i18n="desc_pacman">Pan brioche, doble carne smash, cheddar, salsa doble
+                cuarto y pepinillos.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">10.50€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+
+          <!-- Play -->
+          <div class="menu-card theme-blue" data-id="3">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="best_seller">BEST SELLER</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/Play.png" alt="Play Burger" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">3. PLAY</h3>
+              <p class="burger-ingredients" data-i18n="desc_play">Pan brioche, doble carne smash, cheddar y bacon.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">10.50€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+
+          <!-- Tetris -->
+          <div class="menu-card" data-id="4">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="original_recipe">RECETA ORIGINAL</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/Tetris.png" alt="Tetris Burger" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">4. TETRIS</h3>
+              <p class="burger-ingredients" data-i18n="desc_tetris">Pan brioche, doble carne smash, cheddar, lechuga,
+                tomate, cebolla morada y mayonesa.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">10.50€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+
+          <!-- Super Mario -->
+          <div class="menu-card theme-blue" data-id="5">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="power_up">POWER UP!</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/Super Mario.png" alt="Super Mario Burger" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">5. SUPER MARIO</h3>
+              <p class="burger-ingredients" data-i18n="desc_mario">Pan brioche, doble carne smash, cheddar, bacon,
+                bastones de mozzarella y salsa barbacoa.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">12.90€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+
+          <!-- Mortal -->
+          <div class="menu-card" data-id="6">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="fatal_spicy">RECOMENDADO</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/Mortal.png" alt="Mortal Burger" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">6. MORTAL</h3>
+              <p class="burger-ingredients" data-i18n="desc_mortal">Pan brioche, doble carne smash, cheddar, salsa
+                tekken, cebolla morada, cebolla crispy, bacon, pepinillos y ketchup.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">12.90€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Changing smash meat free of cost badge -->
+        <div class="change-patty-banner" data-i18n="change_patty_alert">
+          ¡Cambia tu carne smash por una milanesa, medallón de pollo, o medallón de soja sin costo!
+        </div>
+      </div>
+
+      <!-- Milanesas & Starters -->
+      <div class="menu-tab-pane" id="tab-milanesas-entrantes">
+        <!-- Milanesas Sub-section -->
+        <div class="milanesas-title-bar" data-i18n="milanesas_title">MILANESAS DE JUEGO</div>
+        <div class="milanesas-grid">
+          <!-- Argentina -->
+          <div class="menu-card theme-blue" data-id="7">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="original_recipe">RECETA ORIGINAL</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/Milanesa Argentina.png" alt="Milanesa Argentina" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">ARGENTINA</h3>
+              <p class="burger-ingredients" data-i18n="desc_argentina">Pan brioche, milanesa, lechuga, tomate, cebolla y
+                mayonesa.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">13.50€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+
+          <!-- Americana -->
+          <div class="menu-card theme-blue" data-id="8">
+            <div class="card-glow-overlay"></div>
+            <div class="burger-badge" data-i18n="highly_recommended">RECOMENDADO</div>
+            <div class="burger-img-wrapper">
+              <div class="burger-item-glow"></div>
+              <img src="images/Milanesa Americana.png" alt="Milanesa Americana" class="burger-img">
+            </div>
+            <div class="burger-info">
+              <h3 class="burger-name">AMERICANA</h3>
+              <p class="burger-ingredients" data-i18n="desc_americana">Pan brioche, milanesa, cheddar y bacon.</p>
+
+              <div class="price-display">
+                <span class="price-label" data-i18n="price_label">PUNTUACIÓN / PRECIO:</span>
+                <span class="price-val">11.00€</span>
+              </div>
+
+              <div class="toggle-container">
+                <span class="toggle-label text-sola active" data-i18n="label_sola">Sola</span>
+                <button class="combo-toggle-btn" aria-label="Toggle Combo mode">
+                  <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label text-combo" data-i18n="label_combo">Combo</span>
+              </div>
+
+              <div class="combo-includes hidden" data-i18n="combo_includes">+ INCLUYE PATATAS Y BEBIDA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Starters -->
+        <div class="entrantes-title-bar" data-i18n="entrantes_title">ENTRANTES ARCADE</div>
+        <div class="starters-grid">
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_mozzarella_6">Bastones de Muzzarella X6</h4>
+              <p data-i18n="power_up">Deliciosos dedos de queso fundidos</p>
+            </div>
+            <div class="starter-price">4.00€</div>
+          </div>
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_fries_sweet">Patatas Small / Boniatos</h4>
+              <p data-i18n="original_recipe">Crujientes al punto de sal</p>
+            </div>
+            <div class="starter-price">2.50€</div>
+          </div>
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_fries_xl">Patatas XL</h4>
+              <p data-i18n="best_seller">Ración gigante para compartir</p>
+            </div>
+            <div class="starter-price">5.00€</div>
+          </div>
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_fries_cheddar_bacon">Patatas Cheddar y Bacon</h4>
+              <p data-i18n="highly_recommended">Bañadas en salsa de queso cheddar</p>
+            </div>
+            <div class="starter-price">6.00€</div>
+          </div>
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_fries_chili_jalapenos">Patatas Chili y Jalapeños</h4>
+              <p data-i18n="fatal_spicy">Picante explosivo de nivel experto</p>
+            </div>
+            <div class="starter-price">7.00€</div>
+          </div>
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_tequenos_6">Tequeños X6</h4>
+              <p data-i18n="original_recipe">Masa fina rellena de queso blanco</p>
+            </div>
+            <div class="starter-price">8.50€</div>
+          </div>
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_chicken_sticks_4">Sticks de Pollo X4</h4>
+              <p data-i18n="power_up">Tiras crujientes de pollo dorado</p>
+            </div>
+            <div class="starter-price">8.50€</div>
+          </div>
+          <div class="starter-card">
+            <div class="starter-info">
+              <h4 data-i18n="starter_nachos">Nachos SBB</h4>
+              <p data-i18n="best_seller">Cheddar fundido, guacamole y jalapeños</p>
+            </div>
+            <div class="starter-price">11.90€</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extras -->
+      <div class="menu-tab-pane" id="tab-extras">
+        <div class="extras-inventory">
+          <div class="entrantes-title-bar"
+            style="border-color: var(--cyber-grey); color: var(--cyber-grey); text-shadow: none;"
+            data-i18n="extras_title">POWER-UP EXTRAS</div>
+          <div class="extras-grid">
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_jalapenos">Jalapeños</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_gluten_free_bread">Pan sin Gluten</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_onion">Cebolla</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_crispy_onion">Cebolla Crispy</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_red_onion">Cebolla Morada</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_caramelized_onion">Cebolla Caramelizada</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_iceberg_lettuce">Lechuga Iceberg</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_romaine_lettuce">Lechuga Romana</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_pickle">Pepinillo</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_tomato">Tomate</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_bbq_sauce">Salsa Barbacoa</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_triple_sauce">Salsa Triple</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_roquefort">Roquefort</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_cheddar_sauce">Salsa Cheddar</span>
+              <span class="extra-price">0.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_egg">Huevo</span>
+              <span class="extra-price">1.00€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_truffle_sauce">Salsa Trufada</span>
+              <span class="extra-price">1.00€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_goat_cheese">Queso de Cabra</span>
+              <span class="extra-price">1.00€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_guacamole">Guacamole</span>
+              <span class="extra-price">1.00€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_bacon_jam">Mermelada Bacon</span>
+              <span class="extra-price">1.00€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_bacon">Bacon</span>
+              <span class="extra-price">1.00€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_mozzarella_sticks_2">Bastones Muzzarella X2</span>
+              <span class="extra-price">1.50€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_smash_patty">Extra Carne Smash</span>
+              <span class="extra-price">2.00€</span>
+            </div>
+            <div class="extra-item">
+              <span class="extra-name" data-i18n="extra_pulled_pork">Pulled Pork</span>
+              <span class="extra-price">2.00€</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks & Desserts -->
+      <div class="menu-tab-pane" id="tab-bebidas-postres">
+        <div class="bebidas-postres-grid">
+          <!-- Drinks -->
+          <div class="bebidas-column">
+            <div class="column-title" data-i18n="drinks_label">BEBIDAS</div>
+            <div class="item-list">
+              <div class="menu-list-item">
+                <span class="list-item-name" data-i18n="drink_soda">Refrescos</span>
+                <span class="list-item-price">2.50€</span>
+              </div>
+              <div class="menu-list-item">
+                <span class="list-item-name" data-i18n="drink_beer_glass">Cerveza Copa</span>
+                <span class="list-item-price">3.00€</span>
+              </div>
+              <div class="menu-list-item">
+                <span class="list-item-name" data-i18n="drink_beer_jar">Cerveza Jarra Estrella Damm</span>
+                <span class="list-item-price">4.50€</span>
+              </div>
+              <div class="menu-list-item">
+                <span class="list-item-name" data-i18n="drink_water">Agua</span>
+                <span class="list-item-price">2.00€</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="postres-column">
+            <div class="column-title" data-i18n="desserts_label">POSTRES</div>
+            <div class="item-list">
+              <div class="menu-list-item">
+                <span class="list-item-name" data-i18n="dessert_tiramisu">Tiramisú Casero</span>
+                <span class="list-item-price">4.00€</span>
+              </div>
+              <div class="menu-list-item">
+                <span class="list-item-name" data-i18n="dessert_cheesecake">Cheesecake</span>
+                <span class="list-item-price">4.00€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Delivery -->
+  <section class="delivery-section" id="delivery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="delivery_title">TU SMASH A DOMICILIO</h2>
+        <p class="section-subtitle" data-i18n="delivery_subtitle">Haz tu pedido a domicilio directamente a través de
+          nuestro servicio de confianza.</p>
+      </div>
+
+      <div class="delivery-grid">
+        <!-- Uber Eats Card -->
+        <a href="https://www.ubereats.com/es/store/smash-burger-bar/gFAjRzHBUjykTvDWa_2MBA?srsltid=AfmBOoqhR89et6nCkB2YXRNqEGpz4-Hb4z-q2qv796dMDskC_5PPQxzc"
+          target="_blank" rel="noopener noreferrer" class="delivery-card uber-card">
+          <div class="card-glow-overlay"></div>
+          <div class="delivery-logo-wrapper">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+            <h3>UBER EATS</h3>
+          </div>
+          <p data-i18n="uber_desc">Nuestras burgers smash directas a tu puerta, calientes y en tiempo récord.</p>
+          <div class="delivery-action-btn">
+            <span data-i18n="delivery_cta">PEDIR AHORA</span> <i class="fa-solid fa-gamepad"></i>
+          </div>
+        </a>
+
+        <!-- Partners -->
+        <div class="beverage-partners">
+          <h4 data-i18n="beverage_title">CALMA TU SED CON NUESTROS PARTNERS OFICIALES</h4>
+          <div class="partner-logos">
+            <div class="partner-logo-img neon-coke-logo">
+              <img src="images/Coca.png" alt="Coca Cola" class="partner-img">
+            </div>
+            <div class="partner-logo-img neon-beer-logo">
+              <img src="images/Damm.png" alt="Estrella Damm" class="partner-img">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-cabinet">
+        <div class="cabinet-glow-strip"></div>
+        <div class="about-grid">
+          <div class="about-terminal">
+            <div class="terminal-header">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+              <span class="term-title" data-i18n="about_term_title">SBB_STORY.EXE - STORY PROTOCOL</span>
+            </div>
+            <div class="terminal-body">
+              <p class="term-line glow-green">&gt; INITIALIZING STORY PROTOCOL [OK]</p>
+              <p class="term-line" data-i18n="about_p1">Smash Burger Bar nació de la amistad entre dos familias
+                apasionadas
+                por la buena comida, la cerveza y los momentos compartidos alrededor de una mesa.
+              </p>
+              <p class="term-line" data-i18n="about_p2">No hacemos burgers estándar. Nuestra técnica de "smashing"
+                consiste en aplastar fuertemente la ternera premium contra la plancha de hierro hirviendo para
+                caramelizar instantáneamente los jugos naturales y crear esos bordes crujientes legendarios.</p>
+              <p class="term-line" data-i18n="about_p3">Hoy seguimos manteniendo el mismo espíritu con el que abrimos
+                nuestras puertas:
+                ofrecer una experiencia auténtica, donde cada cliente se sienta como en casa.
+                Más que una hamburguesería, queremos ser un punto de encuentro para vecinos, amigos y visitantes que
+                buscan buena comida y buenos momentos
+                en el corazón del Barrio Gótico de Barcelona. ¡Bienvenidos a nuestra casa!</p>
+              <p class="term-line glow-blue">&gt; SYSTEM READY. KEEP SMASHING. [OK]</p>
+            </div>
+          </div>
+          <div class="about-media-box">
+            <img src="images/Interior.png" alt="SBB Cyber Arcade interior" class="about-media-img">
+            <div class="media-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Review Box -->
+        <div class="google-review-card">
+          <div class="form-marquee">
+            <h3 data-i18n="review_title">DEJA TU HIGH SCORE EN GOOGLE</h3>
+          </div>
+          <div class="review-box-content">
+            <div class="review-stars">
+              <i class="fa-solid fa-star star-neon"></i>
+              <i class="fa-solid fa-star star-neon"></i>
+              <i class="fa-solid fa-star star-neon"></i>
+              <i class="fa-solid fa-star star-neon"></i>
+              <i class="fa-solid fa-star star-neon"></i>
+            </div>
+            <h4 class="review-tagline" data-i18n="review_tagline">¿DISFRUTASTE LA PARTIDA?</h4>
+            <p class="review-description" data-i18n="review_desc">Danos una puntuación de 5 estrellas en Google Maps. Tu
+              valoración nos ayuda a desbloquear nuevos niveles, mejorar nuestras recetas y mantener encendidos los
+              neones de nuestras máquinas arcade.</p>
+
+            <div class="review-stats-grid">
+              <div class="review-stat-card">
+                <div class="stat-num glow-blue">4.8</div>
+                <div class="stat-label">SCORE</div>
+              </div>
+              <div class="review-stat-card">
+                <div class="stat-num glow-red">450+</div>
+                <div class="stat-label">PLAYERS</div>
+              </div>
+            </div>
+
+            <a href="https://g.page/r/CTZkkyVUprk9EBM/review" target="_blank" rel="noopener noreferrer"
+              class="btn-submit-score review-btn">
+              <i class="fa-solid fa-star"></i>
+              <span data-i18n="review_cta">DEJAR RESEÑA EN GOOGLE</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Location & Hours -->
+        <div class="location-card">
+          <div class="location-header">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3 data-i18n="loc_hours_title">NUESTRA UBICACIÓN</h3>
+          </div>
+
+          <div class="location-details">
+            <div class="detail-group">
+              <h4 data-i18n="loc_hq">SBB ARCADE HEADQUARTERS</h4>
+              <p><i class="fa-solid fa-map-pin"></i> Carrer de Simó Oller, 2, Ciutat Vella, 08002 Barcelona, España</p>
+              <p><i class="fa-solid fa-phone"></i> +34 626 84 34 80</p>
+            </div>
+
+            <div class="detail-group">
+              <h4 data-i18n="hours_title">HORARIO DE APERTURA</h4>
+              <div class="hours-grid">
+                <div class="hours-row">
+                  <span class="days" data-i18n="days_week">MARTES - SÁBADO:</span>
+                  <span class="time">12:30 - 23:45</span>
+                </div>
+                <div class="hours-row highlight-yellow-row">
+                  <span class="days" data-i18n="days_weekend">DOMINGO - LUNES:</span>
+                  <span class="time">13:00 - 23:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map container -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.7304011668575!2d2.1771892765310072!3d41.37994177130064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3002ff4ae47%3A0x3db9a65425936436!2sSmash%20Burger%20Bar%20%7C%20G%C3%B2tico!5e0!3m2!1ses-419!2sar!4v1779241151430!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>SBB</h2>
+          <p data-i18n="footer_desc">El auténtico sabor del smash burger premium con el alma de los salones recreativos.
+            Vive la experiencia gamer.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_quick_links">NAVEGADOR</h4>
+          <a href="#menu" data-i18n="nav_menu">MENÚ</a>
+          <a href="#delivery" data-i18n="nav_delivery">PEDIDOS</a>
+          <a href="#about" data-i18n="nav_about">SOBRE NOSOTROS</a>
+          <a href="#contact" data-i18n="nav_contact">UBICACIÓN</a>
+        </div>
+        <div class="footer-social">
+          <h4 data-i18n="footer_social">SIGUENOS</h4>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/sbb.smashburger/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smash Burger Bar (SBB). All Rights Reserved. Made with <i
+            class="fa-solid fa-heart neon-heart"></i> for SBB players.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
