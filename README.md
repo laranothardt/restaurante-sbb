@@ -1,4 +1,4 @@
-\#Smash Burger Bar - Sitio Web Oficial
+Smash Burger Bar - Sitio Web Oficial
 
 
 
@@ -6,7 +6,7 @@ Este proyecto fue desarrollado con el objetivo de optimizar la presencia digital
 
 
 
-\*\*\[Ver sitio web en vivo](https://laranothardt.github.io/restaurante-sbb/)\*\*
+[Ver sitio web en vivo](https://laranothardt.github.io/restaurante-sbb/)
 
 
 
@@ -14,7 +14,7 @@ Este proyecto fue desarrollado con el objetivo de optimizar la presencia digital
 
 
 
-\##Características del Proyecto
+Características del Proyecto
 
 
 
@@ -28,7 +28,7 @@ Este proyecto fue desarrollado con el objetivo de optimizar la presencia digital
 
 
 
-\##Tecnologías Utilizadas
+Tecnologías Utilizadas
 
 
 
@@ -36,17 +36,17 @@ Las herramientas y lenguajes empleados en el desarrollo de este sitio son:
 
 
 
-\- \*\*HTML5\*\* - Estructuración semántica y accesible del contenido.
+\- HTML5 - Estructuración semántica y accesible del contenido.
 
-\- \*\*CSS3\*\* - Estilos personalizados, diseño adaptativo con Flexbox/Grid y efectos visuales.
+\- CSS3 - Estilos personalizados, diseño adaptativo y efectos visuales.
 
-\- \*\*JavaScript (ES6)\*\* - Interactividad, manejo del menú desplegable y dinamismo en la navegación.
+\- JavaScript (ES6) - Interactividad, manejo del menú desplegable y dinamismo en la navegación.
 
-\- \*\*Git \& GitHub\*\* - Control de versiones y despliegue automatizado.
+\- Git \& GitHub - Control de versiones y despliegue automatizado.
 
 
 
-\## Captura de Pantalla
+Captura de Pantalla
 
 
 
@@ -62,9 +62,9 @@ Las herramientas y lenguajes empleados en el desarrollo de este sitio son:
 
 
 
-\##Autora
+Autora
 
 
 
-\- Lara Nothardt Hackel - \*Desarrollo Completo e Identidad Visual\* - \[@laranothardt](https://github.com/laranothardt)
+\- Lara Nothardt Hackel - Desarrollo Completo e Identidad Visual - \[@laranothardt](https://github.com/laranothardt)
 
