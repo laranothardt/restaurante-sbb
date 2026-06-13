@@ -52,7 +52,7 @@ Las herramientas y lenguajes empleados en el desarrollo de este sitio son:
 
 <p align="center">
 
-&#x20; <img src="img/screenshot.png" alt="Previsualización de Smash Burger Bar" width="85%" />
+&#x20; <img src="images/screenshot.png" alt="Previsualización de Smash Burger Bar" width="85%" />
 
 </p>
 
